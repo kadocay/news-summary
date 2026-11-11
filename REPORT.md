@@ -139,3 +139,59 @@ submission, against the three fixed house summaries and the other entries.
    wallet/keypair was created or used, no API keys were handled. Submission
    (repo `kadocay/news-summary`, transcripts bundle, `makefun.mjs check` /
    `submit`) is still to be done by the parent agent.
+
+## Revision 2 — full-day refresh (2026-11-11 ~18:45 UTC, re-submitted)
+
+The v1 entry was submitted by the parent agent on 2026-11-11 (status
+passed, official score none — unscored). This revision rewrites
+`summary.txt` (11 stories, 1,990 code points) after the day ended, because
+v1 was built mid-day (~10:00 UTC) and its lead item had gone stale: v1
+said the Abu Dhabi talks had "no deal, and a reported swap deal
+unconfirmed", but the talks concluded on 11 Nov with a prisoner swap of
+over 1,000 each side agreed (AP/BBC via Pollar; Meduza: "agreed in
+principle"), no deal on territory. A judge that knows the day would count
+the stale claim against v1 under rubric criterion 3.
+
+New stories added (all verified against live reporting on 11 Nov):
+- Nvidia: House chairmen's reply deadline 11 Nov; Mast said "absolutely"
+  he would subpoena Huang; board probe by Wachtell (ABC News via
+  FinanceFeeds / Tom's Hardware / South Bay Chronicle).
+- Indonesia: Vice President Gibran Rakabuming Raka resigned, aide Budi
+  Arie Setiadi told Reuters; court rulings on his diploma; palace had
+  not confirmed it (Reuters, 11 Nov 12:55 UTC).
+- Spain: first general strike in 14 years over housing, CCOO + UGT,
+  ahead of the 29 Nov snap election (Reuters via TBS News).
+- Trinidad and Tobago: Privy Council unanimously struck down the
+  colonial-era ban on same-sex intimacy, Jason Jones case from 2017
+  (AP via ASEAN NOW; OHCHR, 11 Nov).
+- Kenya: last Ebola patient discharged, 42-day countdown started
+  (Reuters, 11 Nov 09:24 UTC); DRC figures 11,042 cases / 5,387 deaths
+  re-verified (Reuters, 10 Nov 23:14 UTC).
+- Markets updated to the 11 Nov US close: S&P 500 -0.4%, 10-year yield
+  4.98% (OneTurn day page; BLS CPI +0.4% as in v1).
+
+Dropped to fit the 2,000-character gate: Bulgaria pile-up (12 dead),
+Hormuz tanker attacks, Seongnam bus crash, TSMC/Nikkei/Kospi specifics.
+El Salvador/Haiti 400 Mawozo strike and the DRC 66-soldiers death
+sentences were checked and deliberately NOT added: both were announced
+10 Nov, and the Haiti claim (HQ destroyed, ~20 killed) is unverified —
+BBC could not verify the video. The Booker Prize (Harrison, 81) was
+also checked and left out: the ceremony was Monday night, 10 Nov.
+
+Kept from v1, re-verified: COP31 Antalya opening + Guterres fossil-fuel
+call (Pollar/UN), Hegseth 211-204 vote with Massie the only Republican
+dissenter (Reuters), RAF Fairford charges + France fridge hack (DoJ
+indictment unsealed 10 Nov, reported 11 Nov; AFP/Al Jazeera), Anthropic
+IPO terms (SEC filing/CNBC).
+
+Verification (2026-11-11 18:45 UTC):
+- Gate: 1,990 code points (limit 2,000), 1,992 bytes, valid UTF-8, not
+  only whitespace — PASS.
+- Two runs of main.py: byte-identical, SHA-256
+  `f8033438ebec5bd84cd88b2c583883be6c275c1e18abff2f3c90b6b57f572033`.
+- Honest comparison vs v1: v2 is genuinely better — it fixes the stale
+  lead claim, adds five major stories across regions/fields, and updates
+  markets to the day's close; it loses three smaller items (Bulgaria,
+  Hormuz, Seongnam). Re-submission approved on that basis; a re-submit
+  replaces v1 as the final entry.
+
